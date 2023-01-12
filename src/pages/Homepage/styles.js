@@ -9,10 +9,11 @@ export const CarouselWrapper = styled.div`
   height: 80vh;
 `
 
-export const AllProductsSection = styled.div`
+export const ProductsSections = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5rem;
 `
 
 export const SectionTitle = styled.h2`
