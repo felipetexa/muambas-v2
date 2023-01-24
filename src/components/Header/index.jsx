@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 function Header() {
@@ -27,7 +28,15 @@ function Header() {
         </SearchBar>
         <UserInfo>
           <ShoppingCartOutlinedIcon fontSize='large' />
-          <AccountCircleOutlinedIcon fontSize='large'/>
+          <NavDropdown title={<AccountCircleOutlinedIcon fontSize='large'/>}id="nav-dropdown">
+            {/* login form and logged options */}
+        <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+      </NavDropdown>
+          
         </UserInfo>
       </HeaderDiv>
       <SubHeader>
